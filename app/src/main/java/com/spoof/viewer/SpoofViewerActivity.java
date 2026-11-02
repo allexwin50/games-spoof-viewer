@@ -30,8 +30,13 @@ public class SpoofViewerActivity extends Activity {
         setTitle(getString(R.string.app_name));
 
         ScrollView scroll = new ScrollView(this);
+        scroll.setClipToPadding(false);
+        scroll.setFillViewport(true);
         LinearLayout root = new LinearLayout(this);
         root.setOrientation(LinearLayout.VERTICAL);
+        // clipToPadding=false: o topo do primeiro card (canto arredondado) nao e'
+        // recortado pela faixa de padding do container.
+        root.setClipToPadding(false);
         int pad = dp(16);
         root.setPadding(pad, pad, pad, dp(32));
         scroll.addView(root);
