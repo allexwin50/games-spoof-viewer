@@ -86,7 +86,11 @@ public class SpoofViewerActivity extends Activity {
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         lp.topMargin = dp(10);
         card.setLayoutParams(lp);
-        card.setBackgroundColor(Color.argb(28, 128, 128, 128));
+        // fundo do card com cantos arredondados de 12dp
+        android.graphics.drawable.GradientDrawable cardBg = new android.graphics.drawable.GradientDrawable();
+        cardBg.setColor(Color.argb(28, 128, 128, 128));
+        cardBg.setCornerRadius(dp(12));
+        card.setBackground(cardBg);
 
         // Nome do perfil (bonito) + contagem de spoofs, no accent Monet
         TextView name = new TextView(this);
