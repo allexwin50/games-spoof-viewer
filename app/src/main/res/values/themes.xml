@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Tema CLARO (dia). O arquivo equivalente em values-night/ cobre o modo escuro. -->
-    <style name="Theme.GamesSpoof" parent="@android:style/Theme.DeviceDefault.Light">
+    <style name="Theme.GamesSpoof" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
         <item name="android:windowBackground">@color/bg</item>
         <item name="android:colorBackground">@color/bg</item>
         <item name="android:colorPrimary">@color/bar</item>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Tema ESCURO (noite): preto total. As cores vêm de values-night/colors.xml. -->
-    <style name="Theme.GamesSpoof" parent="@android:style/Theme.DeviceDefault">
+    <style name="Theme.GamesSpoof" parent="@android:style/Theme.DeviceDefault.NoActionBar">
         <item name="android:windowBackground">@color/bg</item>
         <item name="android:colorBackground">@color/bg</item>
         <item name="android:colorPrimary">@color/bar</item>

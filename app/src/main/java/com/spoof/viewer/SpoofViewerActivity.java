@@ -32,15 +32,30 @@ public class SpoofViewerActivity extends Activity {
         ScrollView scroll = new ScrollView(this);
         scroll.setClipToPadding(false);
         scroll.setFillViewport(true);
-        LinearLayout root = new LinearLayout(this);
+        final LinearLayout root = new LinearLayout(this);
         root.setOrientation(LinearLayout.VERTICAL);
-        // clipToPadding=false: o topo do primeiro card (canto arredondado) nao e'
-        // recortado pela faixa de padding do container.
         root.setClipToPadding(false);
-        int pad = dp(16);
-        root.setPadding(pad, pad, pad, dp(32));
+        final int pad = dp(16);
+        final int padBottom = dp(32);
+        root.setPadding(pad, pad, pad, padBottom);
+        // Android 15 (targetSdk 35) desenha edge-to-edge: aplicamos o recuo das
+        // barras do sistema como padding, para o conteudo (e o topo do 1o card)
+        // nao ficar por baixo da status bar / barra de navegacao.
+        root.setOnApplyWindowInsetsListener((v, insets) -> {
+            android.graphics.Insets b = insets.getInsets(android.view.WindowInsets.Type.systemBars());
+            v.setPadding(pad, pad + b.top, pad, padBottom + b.bottom);
+            return insets;
+        });
         scroll.addView(root);
         setContentView(scroll);
+
+        // Titulo proprio (nao ha mais ActionBar)
+        TextView appTitle = new TextView(this);
+        appTitle.setText(getString(R.string.app_name));
+        appTitle.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24);
+        appTitle.setTypeface(appTitle.getTypeface(), android.graphics.Typeface.BOLD);
+        appTitle.setPadding(0, 0, 0, dp(10));
+        root.addView(appTitle);
 
         PropParser.Config cfg = PropParser.parse(PropParser.DEFAULT_PATH);
 
