@@ -56,9 +56,44 @@ public final class PropParser {
 
     public static final class Profile {
         public final String name;
+        public String label;        // nome bonito do comentario acima de [profile.x] (ou null)
         public final List<Field> fields = new ArrayList<>();
         public final List<Game> games = new ArrayList<>();
         Profile(String name) { this.name = name; }
+        /** Texto exibido: o label verbatim, se houver; senao o nome "embelezado". */
+        public String displayName() {
+            return (label != null && !label.isEmpty()) ? label : prettify(name);
+        }
+    }
+
+    /**
+     * Converte uma chave de perfil num nome legivel: troca '_' e '-' por espaco,
+     * separa nas fronteiras letra<->numero e deixa a primeira letra maiuscula.
+     * Ex.: redmagic11pro -> "Redmagic 11 pro"; infinix_gt50pro -> "Infinix gt 50 pro".
+     * Nao separa letras coladas sem fronteira (galaxyzfold5 -> "Galaxyzfold 5");
+     * para esses, use um comentario de nome acima do [profile.x].
+     */
+    public static String prettify(String s) {
+        if (s == null || s.isEmpty()) return s;
+        StringBuilder b = new StringBuilder();
+        char prev = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '_' || c == '-') {
+                if (b.length() > 0 && b.charAt(b.length() - 1) != ' ') b.append(' ');
+                prev = ' ';
+                continue;
+            }
+            boolean boundary = (Character.isLetter(prev) && Character.isDigit(c))
+                    || (Character.isDigit(prev) && Character.isLetter(c));
+            if (boundary && b.length() > 0 && b.charAt(b.length() - 1) != ' ') b.append(' ');
+            b.append(Character.toLowerCase(c));
+            prev = c;
+        }
+        String r = b.toString().trim();
+        while (r.contains("  ")) r = r.replace("  ", " ");
+        if (r.isEmpty()) return s;
+        return Character.toUpperCase(r.charAt(0)) + r.substring(1);
     }
 
     public static final class Game {
@@ -101,6 +136,8 @@ public final class PropParser {
         LinkedHashMap<String, LinkedHashMap<String, String>> profileRaw = new LinkedHashMap<>();
         // mapRaw: lista de {pkgOriginal, label, profileValue} na ordem do arquivo
         List<String[]> mapRaw = new ArrayList<>();
+        // profileLabel: nome do perfil -> comentario imediatamente acima de [profile.x]
+        LinkedHashMap<String, String> profileLabel = new LinkedHashMap<>();
 
         BufferedReader br = null;
         try {
@@ -111,11 +148,19 @@ public final class PropParser {
             while ((line = br.readLine()) != null) {
                 if (line.length() > 0 && line.charAt(0) == '﻿') line = line.substring(1);
                 line = line.trim();
-                if (line.isEmpty()) continue;
+                if (line.isEmpty()) { lastComment = null; continue; }
                 char c = line.charAt(0);
                 if (c == '#') { lastComment = line.substring(1).trim(); continue; }
                 if (c == '[') {
-                    if (line.endsWith("]")) section = line.substring(1, line.length() - 1).trim();
+                    if (line.endsWith("]")) {
+                        section = line.substring(1, line.length() - 1).trim();
+                        // comentario logo acima de [profile.x] vira o nome bonito do perfil
+                        // (ignora campo comentado, que contem '=', ex.: "# board=kalama")
+                        if (section.startsWith("profile.") && lastComment != null
+                                && !lastComment.isEmpty() && lastComment.indexOf('=') < 0) {
+                            profileLabel.put(section.substring("profile.".length()), lastComment);
+                        }
+                    }
                     lastComment = null;
                     continue;
                 }
@@ -144,6 +189,7 @@ public final class PropParser {
         // Monta os perfis definidos, com os campos na ordem que o framework aplica.
         for (Map.Entry<String, LinkedHashMap<String, String>> e : profileRaw.entrySet()) {
             Profile p = new Profile(e.getKey());
+            p.label = profileLabel.get(e.getKey());
             LinkedHashMap<String, String> kv = e.getValue();
             for (String[] fd : FIELDS) {
                 String v = kv.get(fd[0]);

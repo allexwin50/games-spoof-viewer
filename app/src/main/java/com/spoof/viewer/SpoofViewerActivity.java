@@ -88,9 +88,9 @@ public class SpoofViewerActivity extends Activity {
         card.setLayoutParams(lp);
         card.setBackgroundColor(Color.argb(28, 128, 128, 128));
 
-        // Nome do perfil + nº de jogos
+        // Nome do perfil (bonito) + contagem de spoofs
         TextView name = new TextView(this);
-        name.setText(p.name + "   (" + p.games.size() + ")");
+        name.setText(p.displayName() + " - Spoofs: " + p.games.size());
         name.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
         name.setTypeface(name.getTypeface(), android.graphics.Typeface.BOLD);
         card.addView(name);
