@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema CLARO: fundo branco; destaque = accent Monet (Material You) do aparelho -->
+    <color name="bg">#FFFFFFFF</color>
+    <color name="bar">#FFFFFFFF</color>
+    <color name="accent">@android:color/system_accent1_600</color>
+</resources>

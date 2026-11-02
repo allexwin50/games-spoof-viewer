@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema ESCURO: preto total (AMOLED); destaque = accent Monet claro -->
+    <color name="bg">#FF000000</color>
+    <color name="bar">#FF000000</color>
+    <color name="accent">@android:color/system_accent1_200</color>
+</resources>

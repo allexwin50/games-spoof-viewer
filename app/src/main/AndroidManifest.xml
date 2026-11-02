@@ -5,7 +5,7 @@
         android:allowBackup="false"
         android:label="@string/app_name"
         android:icon="@drawable/ic_spoof"
-        android:theme="@android:style/Theme.DeviceDefault">
+        android:theme="@style/Theme.GamesSpoof">
 
         <!--
           Sem <category android:name="android.intent.category.LAUNCHER"> de proposito:

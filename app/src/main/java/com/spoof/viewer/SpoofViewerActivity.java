@@ -88,11 +88,12 @@ public class SpoofViewerActivity extends Activity {
         card.setLayoutParams(lp);
         card.setBackgroundColor(Color.argb(28, 128, 128, 128));
 
-        // Nome do perfil (bonito) + contagem de spoofs
+        // Nome do perfil (bonito) + contagem de spoofs, no accent Monet
         TextView name = new TextView(this);
         name.setText(p.displayName() + " - Spoofs: " + p.games.size());
         name.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
         name.setTypeface(name.getTypeface(), android.graphics.Typeface.BOLD);
+        try { name.setTextColor(getColor(R.color.accent)); } catch (Throwable ignored) {}
         card.addView(name);
 
         // Campos aplicados
