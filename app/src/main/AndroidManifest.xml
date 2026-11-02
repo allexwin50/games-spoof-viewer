@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_spoof"
+        android:theme="@android:style/Theme.DeviceDefault">
+
+        <!--
+          Sem <category android:name="android.intent.category.LAUNCHER"> de proposito:
+          o app NAO aparece na gaveta de apps. Ele e' aberto pela entrada injetada
+          na pagina inicial do Settings (abaixo). Para a injecao funcionar, o APK
+          precisa estar instalado como APP DE SISTEMA (ex.: /product/app ou
+          /system_ext/app). Como app de usuario comum a entrada nao aparece, mas a
+          Activity ainda pode ser aberta por um intent VIEW (atalho).
+        -->
+        <activity
+            android:name="com.spoof.viewer.SpoofViewerActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_spoof">
+
+            <!-- Injecao na pagina inicial do Settings -->
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.homepage" />
+            <meta-data
+                android:name="com.android.settings.title"
+                android:value="Games Spoof" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:value="Jogos e perfis de spoof" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_spoof" />
+
+            <!-- Abertura direta por atalho (opcional) -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
