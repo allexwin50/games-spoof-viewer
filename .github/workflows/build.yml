@@ -3,7 +3,6 @@ name: build-apk
 on:
   push:
     branches: [main]
-    tags: ['v*']
   workflow_dispatch:
 
 permissions:
@@ -41,7 +40,7 @@ jobs:
         run: gradle assembleDebug --no-daemon --stacktrace
 
       - name: Renomear APK
-        run: cp app/build/outputs/apk/debug/app-debug.apk "AppsSpoof-${{ github.ref_name }}.apk"
+        run: cp app/build/outputs/apk/debug/app-debug.apk AppsSpoof-v1.0.apk
 
       - name: Publicar APK como artifact
         uses: actions/upload-artifact@v4
@@ -50,14 +49,15 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
 
-      - name: Publicar Release (quando for tag v*)
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Publicar Release (quando a mensagem do commit tiver [release])
+        if: contains(github.event.head_commit.message, '[release]')
         uses: softprops/action-gh-release@v2
         with:
-          name: Apps Spoof ${{ github.ref_name }}
-          files: AppsSpoof-${{ github.ref_name }}.apk
+          tag_name: v1.0
+          name: Apps Spoof v1.0
+          files: AppsSpoof-v1.0.apk
           body: |
-            **Apps Spoof ${{ github.ref_name }}**
+            **Apps Spoof v1.0**
 
             Visualizador que aparece em **Configurações › Apps** e mostra o mapa
             app → perfil lido de `/product/etc/assets/games_spoof.prop`.
