@@ -1,4 +1,4 @@
-# Games Spoof Viewer
+# Apps Spoof
 
 App Android mínimo que mostra, numa tela com cara de Ajustes, o mapa
 **jogo → perfil** definido em `/product/etc/assets/games_spoof.prop` e os campos
@@ -44,7 +44,7 @@ chmod 644 /product/app/GamesSpoofViewer/GamesSpoofViewer.apk
 # reinicie
 ```
 
-Depois de reiniciar, a entrada **Games Spoof** aparece na página inicial do
+Depois de reiniciar, a entrada **Apps Spoof** aparece na página inicial do
 Ajustes. (Também funciona empacotando como módulo Magisk que monte o APK nesse
 caminho.)
 

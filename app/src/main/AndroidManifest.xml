@@ -30,10 +30,10 @@
                 android:value="com.android.settings.category.ia.apps" />
             <meta-data
                 android:name="com.android.settings.title"
-                android:value="Games Spoof" />
+                android:value="Apps Spoof" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:value="Jogos e perfis de spoof" />
+                android:value="Apps e perfis de spoof" />
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_spoof" />
