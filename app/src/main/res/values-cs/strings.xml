@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Nakonfigurované aplikace a profily spoof</string>
+    <string name="subtitle_count">%1$d aplikací  •  %2$d používaných profilů</string>
+    <string name="no_active_fields">(žádná aktivní pole)</string>
+    <string name="unused_profiles">Profily definované, ale nepoužívané žádnou aplikací: %1$s</string>
+    <string name="error_title">Nepodařilo se načíst spoofy</string>
+    <string name="error_hint">Zkontrolujte, že soubor existuje a je čitelný (0644).</string>
+</resources>

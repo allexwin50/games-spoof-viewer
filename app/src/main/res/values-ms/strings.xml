@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Apl dan profil spoof yang dikonfigurasikan</string>
+    <string name="subtitle_count">%1$d apl  •  %2$d profil digunakan</string>
+    <string name="no_active_fields">(tiada medan aktif)</string>
+    <string name="unused_profiles">Profil ditakrifkan tetapi tidak digunakan oleh mana-mana apl: %1$s</string>
+    <string name="error_title">Tidak dapat membaca spoof</string>
+    <string name="error_hint">Pastikan fail wujud dan boleh dibaca (0644).</string>
+</resources>

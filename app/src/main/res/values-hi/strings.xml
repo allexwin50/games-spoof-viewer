@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">कॉन्फ़िगर किए गए ऐप्स और स्पूफ़ प्रोफ़ाइल</string>
+    <string name="subtitle_count">%1$d ऐप्स  •  %2$d प्रोफ़ाइल उपयोग में</string>
+    <string name="no_active_fields">(कोई सक्रिय फ़ील्ड नहीं)</string>
+    <string name="unused_profiles">परिभाषित लेकिन किसी ऐप द्वारा उपयोग न किए गए प्रोफ़ाइल: %1$s</string>
+    <string name="error_title">स्पूफ़ नहीं पढ़े जा सके</string>
+    <string name="error_hint">जाँचें कि फ़ाइल मौजूद है और पढ़ने योग्य है (0644)।</string>
+</resources>

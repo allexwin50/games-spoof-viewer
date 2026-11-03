@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">已設定的應用程式與偽裝設定檔</string>
+    <string name="subtitle_count">%1$d 個應用程式  •  %2$d 個設定檔使用中</string>
+    <string name="no_active_fields">(無使用中的欄位)</string>
+    <string name="unused_profiles">已定義但沒有任何應用程式使用的設定檔: %1$s</string>
+    <string name="error_title">無法讀取偽裝資料</string>
+    <string name="error_hint">請確認檔案存在且可讀取 (0644)。</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Apps y perfiles de spoof configurados</string>
+    <string name="subtitle_count">%1$d apps  •  %2$d perfiles en uso</string>
+    <string name="no_active_fields">(sin campos activos)</string>
+    <string name="unused_profiles">Perfiles definidos pero sin ninguna app que los use: %1$s</string>
+    <string name="error_title">No se pudieron leer los spoofs</string>
+    <string name="error_hint">Comprueba que el archivo existe y tiene permiso de lectura (0644).</string>
+</resources>

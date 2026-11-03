@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Настроенные приложения и профили спуфинга</string>
+    <string name="subtitle_count">%1$d прил.  •  %2$d профилей используется</string>
+    <string name="no_active_fields">(нет активных полей)</string>
+    <string name="unused_profiles">Профили заданы, но не используются ни одним приложением: %1$s</string>
+    <string name="error_title">Не удалось прочитать спуфы</string>
+    <string name="error_hint">Убедитесь, что файл существует и доступен для чтения (0644).</string>
+</resources>

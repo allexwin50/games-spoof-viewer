@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">已配置的应用和伪装配置</string>
+    <string name="subtitle_count">%1$d 个应用  •  %2$d 个配置使用中</string>
+    <string name="no_active_fields">(无活动字段)</string>
+    <string name="unused_profiles">已定义但没有任何应用使用的配置: %1$s</string>
+    <string name="error_title">无法读取伪装数据</string>
+    <string name="error_hint">请确认文件存在且可读 (0644)。</string>
+</resources>

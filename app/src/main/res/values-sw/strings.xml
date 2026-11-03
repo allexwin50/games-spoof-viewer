@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Programu na wasifu wa spoof ulioundwa</string>
+    <string name="subtitle_count">%1$d programu  •  %2$d wasifu unatumika</string>
+    <string name="no_active_fields">(hakuna sehemu zinazotumika)</string>
+    <string name="unused_profiles">Wasifu umefafanuliwa lakini hautumiwi na programu yoyote: %1$s</string>
+    <string name="error_title">Imeshindwa kusoma spoofs</string>
+    <string name="error_hint">Hakikisha faili lipo na linaweza kusomwa (0644).</string>
+</resources>

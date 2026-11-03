@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Подешене апликације и spoof профили</string>
+    <string name="subtitle_count">%1$d апл.  •  %2$d профила у употреби</string>
+    <string name="no_active_fields">(нема активних поља)</string>
+    <string name="unused_profiles">Профили дефинисани, али их не користи ниједна апликација: %1$s</string>
+    <string name="error_title">Није могуће прочитати spoof-ове</string>
+    <string name="error_hint">Проверите да ли датотека постоји и да ли је читљива (0644).</string>
+</resources>

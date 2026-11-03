@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">구성된 앱 및 스푸프 프로필</string>
+    <string name="subtitle_count">%1$d개 앱  •  %2$d개 프로필 사용 중</string>
+    <string name="no_active_fields">(활성 필드 없음)</string>
+    <string name="unused_profiles">정의되었지만 어떤 앱도 사용하지 않는 프로필: %1$s</string>
+    <string name="error_title">스푸프를 읽을 수 없습니다</string>
+    <string name="error_hint">파일이 있고 읽을 수 있는지 확인하세요 (0644).</string>
+</resources>

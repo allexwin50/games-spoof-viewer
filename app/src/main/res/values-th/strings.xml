@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">แอปและโปรไฟล์สปูฟที่ตั้งค่าไว้</string>
+    <string name="subtitle_count">%1$d แอป  •  %2$d โปรไฟล์ที่ใช้งาน</string>
+    <string name="no_active_fields">(ไม่มีฟิลด์ที่ใช้งาน)</string>
+    <string name="unused_profiles">โปรไฟล์ที่กำหนดไว้แต่ไม่มีแอปใดใช้: %1$s</string>
+    <string name="error_title">อ่านข้อมูลสปูฟไม่ได้</string>
+    <string name="error_hint">ตรวจสอบว่าไฟล์มีอยู่และอ่านได้ (0644)</string>
+</resources>

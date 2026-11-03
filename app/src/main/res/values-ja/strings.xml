@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">設定済みのアプリとスプーフプロファイル</string>
+    <string name="subtitle_count">%1$d 個のアプリ  •  %2$d 個のプロファイル使用中</string>
+    <string name="no_active_fields">(有効なフィールドなし)</string>
+    <string name="unused_profiles">定義済みだがどのアプリにも使われていないプロファイル: %1$s</string>
+    <string name="error_title">スプーフを読み込めませんでした</string>
+    <string name="error_hint">ファイルが存在し、読み取り可能か確認してください (0644)。</string>
+</resources>

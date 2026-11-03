@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Mga naka-configure na app at spoof profile</string>
+    <string name="subtitle_count">%1$d app  •  %2$d profile ang ginagamit</string>
+    <string name="no_active_fields">(walang aktibong field)</string>
+    <string name="unused_profiles">Mga profile na tinukoy ngunit hindi ginagamit ng anumang app: %1$s</string>
+    <string name="error_title">Hindi mabasa ang mga spoof</string>
+    <string name="error_hint">Tiyaking umiiral ang file at nababasa ito (0644).</string>
+</resources>

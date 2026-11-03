@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">কনফিগার করা অ্যাপ ও স্পুফ প্রোফাইল</string>
+    <string name="subtitle_count">%1$d অ্যাপ  •  %2$d প্রোফাইল ব্যবহৃত</string>
+    <string name="no_active_fields">(কোনও সক্রিয় ফিল্ড নেই)</string>
+    <string name="unused_profiles">সংজ্ঞায়িত কিন্তু কোনও অ্যাপ ব্যবহার করে না এমন প্রোফাইল: %1$s</string>
+    <string name="error_title">স্পুফ পড়া যায়নি</string>
+    <string name="error_hint">ফাইলটি আছে এবং পড়ার যোগ্য কিনা দেখুন (0644)।</string>
+</resources>

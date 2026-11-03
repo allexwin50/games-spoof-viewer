@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">אפליקציות ופרופילי זיוף מוגדרים</string>
+    <string name="subtitle_count">%1$d אפליקציות  •  %2$d פרופילים בשימוש</string>
+    <string name="no_active_fields">(אין שדות פעילים)</string>
+    <string name="unused_profiles">פרופילים שהוגדרו אך אינם בשימוש של אף אפליקציה: %1$s</string>
+    <string name="error_title">לא ניתן לקרוא את הזיופים</string>
+    <string name="error_hint">ודא שהקובץ קיים וניתן לקריאה (0644).</string>
+</resources>

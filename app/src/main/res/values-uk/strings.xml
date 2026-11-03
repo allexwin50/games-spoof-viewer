@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Налаштовані додатки та профілі спуфінгу</string>
+    <string name="subtitle_count">%1$d дод.  •  %2$d профілів використовується</string>
+    <string name="no_active_fields">(немає активних полів)</string>
+    <string name="unused_profiles">Профілі визначені, але не використовуються жодним додатком: %1$s</string>
+    <string name="error_title">Не вдалося прочитати спуфи</string>
+    <string name="error_hint">Переконайтеся, що файл існує та доступний для читання (0644).</string>
+</resources>

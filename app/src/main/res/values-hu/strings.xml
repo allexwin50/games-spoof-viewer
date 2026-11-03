@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Beállított appok és spoof-profilok</string>
+    <string name="subtitle_count">%1$d app  •  %2$d profil használatban</string>
+    <string name="no_active_fields">(nincs aktív mező)</string>
+    <string name="unused_profiles">Megadott, de egyetlen app által sem használt profilok: %1$s</string>
+    <string name="error_title">A spoofok nem olvashatók</string>
+    <string name="error_hint">Ellenőrizd, hogy a fájl létezik és olvasható (0644).</string>
+</resources>

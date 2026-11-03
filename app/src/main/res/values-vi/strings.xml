@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Ứng dụng và hồ sơ giả mạo đã cấu hình</string>
+    <string name="subtitle_count">%1$d ứng dụng  •  %2$d hồ sơ đang dùng</string>
+    <string name="no_active_fields">(không có trường nào hoạt động)</string>
+    <string name="unused_profiles">Hồ sơ đã định nghĩa nhưng không ứng dụng nào dùng: %1$s</string>
+    <string name="error_title">Không đọc được dữ liệu giả mạo</string>
+    <string name="error_hint">Kiểm tra xem tệp có tồn tại và đọc được không (0644).</string>
+</resources>

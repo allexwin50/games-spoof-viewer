@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Applications et profils de spoof configurés</string>
+    <string name="subtitle_count">%1$d applis  •  %2$d profils utilisés</string>
+    <string name="no_active_fields">(aucun champ actif)</string>
+    <string name="unused_profiles">Profils définis mais utilisés par aucune appli : %1$s</string>
+    <string name="error_title">Impossible de lire les spoofs</string>
+    <string name="error_hint">Vérifiez que le fichier existe et est lisible (0644).</string>
+</resources>

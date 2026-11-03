@@ -60,15 +60,15 @@ public class SpoofViewerActivity extends Activity {
         PropParser.Config cfg = PropParser.parse(PropParser.DEFAULT_PATH);
 
         if (cfg.error != null) {
-            root.addView(title("Não foi possível ler os spoofs"));
+            root.addView(title(getString(R.string.error_title)));
             root.addView(body(cfg.error));
-            root.addView(body("Confira se o arquivo existe e está com permissão de leitura (0644)."));
+            root.addView(body(getString(R.string.error_hint)));
             return;
         }
 
         // Cabecalho com contagem
         TextView head = new TextView(this);
-        head.setText(cfg.gameCount() + " jogos  •  " + cfg.usedProfileCount() + " perfis em uso");
+        head.setText(getString(R.string.subtitle_count, cfg.gameCount(), cfg.usedProfileCount()));
         head.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
         head.setPadding(0, 0, 0, dp(4));
         head.setAlpha(0.7f);
@@ -89,8 +89,8 @@ public class SpoofViewerActivity extends Activity {
 
         // Nota sobre perfis definidos mas nao usados
         if (!cfg.unusedProfiles.isEmpty()) {
-            TextView note = body("Perfis definidos mas sem jogo apontando para eles: "
-                    + TextUtils.join(", ", cfg.unusedProfiles));
+            TextView note = body(getString(R.string.unused_profiles,
+                    TextUtils.join(", ", cfg.unusedProfiles)));
             note.setPadding(0, dp(8), 0, 0);
             note.setAlpha(0.6f);
             root.addView(note);
@@ -114,7 +114,7 @@ public class SpoofViewerActivity extends Activity {
 
         // Nome do perfil (bonito) + contagem de spoofs, no accent Monet
         TextView name = new TextView(this);
-        name.setText(p.displayName() + " - Spoofs: " + p.games.size());
+        name.setText(getString(R.string.profile_title, p.displayName(), p.games.size()));
         name.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
         name.setTypeface(name.getTypeface(), android.graphics.Typeface.BOLD);
         try { name.setTextColor(getColor(R.color.accent)); } catch (Throwable ignored) {}
@@ -127,7 +127,7 @@ public class SpoofViewerActivity extends Activity {
             fb.append(f.target).append(" = ").append(f.value);
         }
         TextView fields = new TextView(this);
-        fields.setText(fb.length() == 0 ? "(nenhum campo ativo)" : fb.toString());
+        fields.setText(fb.length() == 0 ? getString(R.string.no_active_fields) : fb.toString());
         fields.setTextSize(TypedValue.COMPLEX_UNIT_SP, 13);
         fields.setPadding(0, dp(6), 0, dp(8));
         fields.setAlpha(0.85f);

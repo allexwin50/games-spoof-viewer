@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Konfigurerte apper og spoof-profiler</string>
+    <string name="subtitle_count">%1$d apper  •  %2$d profiler i bruk</string>
+    <string name="no_active_fields">(ingen aktive felter)</string>
+    <string name="unused_profiles">Profiler definert, men ikke brukt av noen app: %1$s</string>
+    <string name="error_title">Kunne ikke lese spoofene</string>
+    <string name="error_hint">Kontroller at filen finnes og er lesbar (0644).</string>
+</resources>

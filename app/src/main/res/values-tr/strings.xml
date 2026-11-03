@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Yapılandırılmış uygulamalar ve spoof profilleri</string>
+    <string name="subtitle_count">%1$d uygulama  •  %2$d profil kullanımda</string>
+    <string name="no_active_fields">(etkin alan yok)</string>
+    <string name="unused_profiles">Tanımlı ama hiçbir uygulama tarafından kullanılmayan profiller: %1$s</string>
+    <string name="error_title">Spooflar okunamadı</string>
+    <string name="error_hint">Dosyanın mevcut ve okunabilir olduğundan emin olun (0644).</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Ρυθμισμένες εφαρμογές και προφίλ spoof</string>
+    <string name="subtitle_count">%1$d εφαρμ.  •  %2$d προφίλ σε χρήση</string>
+    <string name="no_active_fields">(κανένα ενεργό πεδίο)</string>
+    <string name="unused_profiles">Προφίλ που ορίστηκαν αλλά δεν χρησιμοποιούνται από καμία εφαρμογή: %1$s</string>
+    <string name="error_title">Αδύνατη η ανάγνωση των spoof</string>
+    <string name="error_hint">Βεβαιωθείτε ότι το αρχείο υπάρχει και είναι αναγνώσιμο (0644).</string>
+</resources>

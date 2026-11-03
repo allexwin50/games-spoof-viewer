@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Aplicacions i perfils de spoof configurats</string>
+    <string name="subtitle_count">%1$d aplicacions  •  %2$d perfils en ús</string>
+    <string name="no_active_fields">(cap camp actiu)</string>
+    <string name="unused_profiles">Perfils definits però sense cap aplicació que els faci servir: %1$s</string>
+    <string name="error_title">No s\'han pogut llegir els spoofs</string>
+    <string name="error_hint">Comprova que el fitxer existeix i es pot llegir (0644).</string>
+</resources>

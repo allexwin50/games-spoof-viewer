@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Geconfigureerde apps en spoofprofielen</string>
+    <string name="subtitle_count">%1$d apps  •  %2$d profielen in gebruik</string>
+    <string name="no_active_fields">(geen actieve velden)</string>
+    <string name="unused_profiles">Gedefinieerde profielen die door geen enkele app worden gebruikt: %1$s</string>
+    <string name="error_title">Kan de spoofs niet lezen</string>
+    <string name="error_hint">Controleer of het bestand bestaat en leesbaar is (0644).</string>
+</resources>

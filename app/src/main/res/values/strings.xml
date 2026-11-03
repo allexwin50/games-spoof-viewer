@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Games Spoof</string>
-    <string name="settings_summary">Jogos e perfis de spoof configurados</string>
+    <!-- Idioma base (fallback para qualquer locale sem traducao). -->
+    <!-- Nome do app (marca) - NAO traduzir, igual em todos os idiomas. -->
+    <string name="app_name">Apps Spoof</string>
+    <!-- Cabecalho de cada perfil: "Nome - Spoofs: N" (igual em todos os idiomas). -->
+    <string name="profile_title">%1$s - Spoofs: %2$d</string>
+
+    <!-- Textos traduzidos por idioma (ver values-<locale>/). -->
+    <string name="settings_summary">Configured apps and spoof profiles</string>
+    <string name="subtitle_count">%1$d apps  •  %2$d profiles in use</string>
+    <string name="no_active_fields">(no active fields)</string>
+    <string name="unused_profiles">Profiles defined but not used by any app: %1$s</string>
+    <string name="error_title">Couldn\'t read the spoofs</string>
+    <string name="error_hint">Check that the file exists and is readable (0644).</string>
 </resources>

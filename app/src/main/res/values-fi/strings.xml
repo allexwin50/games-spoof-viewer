@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Määritetyt sovellukset ja spoof-profiilit</string>
+    <string name="subtitle_count">%1$d sovellusta  •  %2$d profiilia käytössä</string>
+    <string name="no_active_fields">(ei aktiivisia kenttiä)</string>
+    <string name="unused_profiles">Määritetyt profiilit, joita mikään sovellus ei käytä: %1$s</string>
+    <string name="error_title">Spoofeja ei voitu lukea</string>
+    <string name="error_hint">Varmista, että tiedosto on olemassa ja luettavissa (0644).</string>
+</resources>

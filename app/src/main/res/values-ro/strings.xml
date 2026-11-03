@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Aplicații și profiluri de spoof configurate</string>
+    <string name="subtitle_count">%1$d aplicații  •  %2$d profiluri în uz</string>
+    <string name="no_active_fields">(niciun câmp activ)</string>
+    <string name="unused_profiles">Profiluri definite, dar neutilizate de nicio aplicație: %1$s</string>
+    <string name="error_title">Spoof-urile nu au putut fi citite</string>
+    <string name="error_hint">Verifică dacă fișierul există și poate fi citit (0644).</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">برنامه‌ها و نمایه‌های جعل پیکربندی‌شده</string>
+    <string name="subtitle_count">%1$d برنامه  •  %2$d نمایه در حال استفاده</string>
+    <string name="no_active_fields">(هیچ فیلد فعالی نیست)</string>
+    <string name="unused_profiles">نمایه‌های تعریف‌شده اما بدون استفاده توسط هیچ برنامه‌ای: %1$s</string>
+    <string name="error_title">خواندن جعل‌ها ممکن نشد</string>
+    <string name="error_hint">مطمئن شوید فایل وجود دارد و قابل خواندن است (0644).</string>
+</resources>

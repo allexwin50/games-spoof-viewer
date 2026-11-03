@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Aplikasi dan profil spoof yang dikonfigurasi</string>
+    <string name="subtitle_count">%1$d aplikasi  •  %2$d profil digunakan</string>
+    <string name="no_active_fields">(tidak ada bidang aktif)</string>
+    <string name="unused_profiles">Profil ditentukan tetapi tidak dipakai aplikasi mana pun: %1$s</string>
+    <string name="error_title">Tidak dapat membaca spoof</string>
+    <string name="error_hint">Pastikan file ada dan dapat dibaca (0644).</string>
+</resources>

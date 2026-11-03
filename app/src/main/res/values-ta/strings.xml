@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">அமைக்கப்பட்ட ஆப்ஸ் மற்றும் ஸ்பூஃப் விவரக்குறிப்புகள்</string>
+    <string name="subtitle_count">%1$d ஆப்ஸ்  •  %2$d சுயவிவரங்கள் பயன்பாட்டில்</string>
+    <string name="no_active_fields">(செயலில் உள்ள புலங்கள் இல்லை)</string>
+    <string name="unused_profiles">வரையறுக்கப்பட்டாலும் எந்த ஆப்பும் பயன்படுத்தாத சுயவிவரங்கள்: %1$s</string>
+    <string name="error_title">ஸ்பூஃப்களை படிக்க முடியவில்லை</string>
+    <string name="error_hint">கோப்பு உள்ளதா மற்றும் படிக்கக்கூடியதா எனப் பார்க்கவும் (0644).</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">التطبيقات وملفات الانتحال المُهيأة</string>
+    <string name="subtitle_count">%1$d تطبيقات  •  %2$d ملفات قيد الاستخدام</string>
+    <string name="no_active_fields">(لا توجد حقول نشطة)</string>
+    <string name="unused_profiles">ملفات مُعرّفة لكن لا يستخدمها أي تطبيق: %1$s</string>
+    <string name="error_title">تعذّر قراءة بيانات الانتحال</string>
+    <string name="error_hint">تأكد من وجود الملف وأنه قابل للقراءة (0644).</string>
+</resources>

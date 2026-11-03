@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">కాన్ఫిగర్ చేసిన యాప్‌లు మరియు స్పూఫ్ ప్రొఫైల్‌లు</string>
+    <string name="subtitle_count">%1$d యాప్‌లు  •  %2$d ప్రొఫైల్‌లు వాడుకలో</string>
+    <string name="no_active_fields">(యాక్టివ్ ఫీల్డ్‌లు లేవు)</string>
+    <string name="unused_profiles">నిర్వచించినా ఏ యాప్ వాడని ప్రొఫైల్‌లు: %1$s</string>
+    <string name="error_title">స్పూఫ్‌లను చదవడం సాధ్యపడలేదు</string>
+    <string name="error_hint">ఫైల్ ఉందా మరియు చదవగలదా చూడండి (0644).</string>
+</resources>
